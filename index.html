@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SequenceKeeper</title>
+  <link rel="stylesheet" href="./assets/css/panel.css">
+  <link rel="stylesheet" href="./assets/css/license.css?v=1">
+  <link rel="stylesheet" href="./assets/css/suite.css?v=1">
+</head>
+<body>
+  <main>
+    <header class="topbar">
+      <h1>SequenceKeeper</h1>
+    </header>
+    <section class="section" aria-label="Project sequences">
+      <p class="instruction">Append selected clips to another sequence</p>
+      <p id="source-label" class="source-label" hidden></p>
+      <div id="sequence-list" class="sequence-list" role="list" aria-label="Project sequences"></div>
+      <button id="remove-gaps" class="remove-gaps-button" type="button">Remove all gaps in active sequence</button>
+      <p id="status" class="status" role="status" aria-live="polite">Connecting to Premiere Pro...</p>
+    </section>
+  </main>
+  <div id="sequence-keeper-update-notice" class="sequence-keeper-dialog sequence-keeper-update-notice" role="dialog" aria-modal="true" aria-labelledby="sequence-keeper-update-title" hidden>
+    <section class="sequence-keeper-dialog-card scene-keeper-update-card">
+      <h2 id="sequence-keeper-update-title">SequenceKeeper Update</h2>
+      <p id="sequence-keeper-update-message" role="status" aria-live="polite"></p>
+      <p class="scene-keeper-update-help">Updates are installed manually. <a id="sequence-keeper-manual-update-link" href="https://github.com/morleyae/SequenceKeeper/releases/latest">Open the latest release</a>.</p>
+      <div class="scene-keeper-update-actions">
+        <button id="sequence-keeper-open-release" type="button">Open Release</button>
+        <button id="sequence-keeper-continue" class="secondary" type="button">Continue without updating</button>
+      </div>
+    </section>
+  </div>
+  <div id="sequence-keeper-whats-new" class="sequence-keeper-dialog sequence-keeper-whats-new" role="dialog" aria-modal="true" aria-labelledby="sequence-keeper-whats-new-title" hidden>
+    <section class="sequence-keeper-dialog-card scene-keeper-update-card">
+      <h2 id="sequence-keeper-whats-new-title">What’s New in SequenceKeeper</h2>
+      <p id="sequence-keeper-whats-new-copy" class="sequence-keeper-release-notes"></p>
+      <div class="confirm-actions"><button id="sequence-keeper-whats-new-close" type="button">Got it</button></div>
+    </section>
+  </div>
+  <footer class="panel-credit">
+    <a id="sequence-keeper-version" class="panel-credit-link" href="https://github.com/morleyae/SequenceKeeper/releases/latest">SequenceKeeper</a>
+    <button id="license-manage-button" class="panel-credit-link" type="button" aria-label="Manage SequenceKeeper license">License</button>
+    <a id="sequence-keeper-creator-link" class="panel-credit-link" href="https://www.tiktok.com/@morley.ae">by morley.ae</a>
+  </footer>
+  <script src="./assets/js/panel.js"></script>
+  <script src="./assets/js/license-config.js?v=1"></script>
+  <script src="./assets/js/license.js?v=1"></script>
+  <script src="./assets/js/components.js?v=1"></script>
+  <script src="./assets/js/update-config.js?v=1"></script>
+  <script src="./assets/js/updater.js?v=1"></script>
+</body>
+</html>
