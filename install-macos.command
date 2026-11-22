@@ -16,7 +16,7 @@ if [[ "$SOURCE_DIR" == "$TARGET_DIR" ]]; then
   exit 1
 fi
 
-printf 'Premiere Pro wird während der Installation geschlossen.\n'
+printf 'Bitte Premiere Pro vor der Installation beenden.\n'
 printf 'Installationspfad: %s\n\n' "$TARGET_DIR"
 printf 'Enter zum Fortfahren, Control+C zum Abbrechen: '
 read -r _

@@ -10,6 +10,14 @@ SequenceKeeper is a CEP panel for Adobe Premiere Pro. It lists every sequence in
 
 If the panel does not appear, enable CEP debug mode in Terminal with `defaults write com.adobe.CSXS.11 PlayerDebugMode 1`, then restart Premiere Pro.
 
+## Install on Windows
+
+1. Quit Premiere Pro.
+2. Extract the release ZIP and run `install-windows.bat` from the extracted `SequenceKeeper` folder.
+3. Start Premiere Pro and open **Window > Extensions (Legacy) > SequenceKeeper**.
+
+The installer copies SequenceKeeper to your Windows user CEP extensions folder and enables CEP debug mode for CSXS 11. It does not require administrator access.
+
 ## Notes
 
 - The active sequence is shown as **Active** and cannot be selected as a destination.
